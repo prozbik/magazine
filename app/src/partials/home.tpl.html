@@ -1,0 +1,23 @@
+<div class="divide80"></div>
+<div class="container">
+    <div class="center-heading">
+        <h2>Welcome</h2>
+        <span class="center-line"></span>
+        <h3>Please choose a category</h3>
+    </div>
+    <div class="row">
+      <div class="col-xs-6 col-md-2 col-md-push-1" ng-repeat="cat in categories">
+        <a href="#/shop/{{cat}}" class="thumbnail">
+          <img ng-src="/public/img/categories/{{cat}}/1.jpg" class="img-responsive" alt="{{cat}}">
+        </a>
+      </div>
+</div>
+
+<h2>Best choice</h2>
+<section>
+  <h2>goods section, special offers</h2>
+</section>
+
+<section>
+  <h2>banner section</h2>
+</section>

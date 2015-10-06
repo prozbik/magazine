@@ -1,0 +1,1362 @@
+[
+  {
+    "id": 1,
+    "img": "/public/img/categories/citybag/5.jpg",
+    "price": 100,
+    "oldPrice": false,
+    "sale": false,
+    "name": "Smart Bag",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 2,
+    "img": "/public/img/categories/citybag/bag1.jpg",
+    "price": 500,
+    "oldPrice": false,
+    "sale": false,
+    "name": "Mini Bag",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 3,
+    "img": "/public/img/categories/citybag/bag2.jpg",
+    "price": 365,
+    "oldPrice": 653,
+    "sale": true,
+    "name": "Cheap Bag",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 4,
+    "img": "/public/img/categories/belts/belt1.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "Nice Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 5,
+    "img": "/public/img/categories/citybag/bag3.jpg",
+    "price": 232,
+    "oldPrice": false,
+    "sale": false,
+    "name": "Super Bag",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 6,
+    "img": "/public/img/categories/citybag/bag4.jpg",
+    "price": 302,
+    "oldPrice": false,
+    "sale": false,
+    "name": "Super duper Bag",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 7,
+    "img": "/public/img/categories/citybag/bag5.jpg",
+    "price": 635,
+    "oldPrice": false,
+    "sale": false,
+    "name": "Some duper Bag",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 8,
+    "img": "/public/img/categories/citybag/bag6.jpg",
+    "price": 235,
+    "oldPrice": false,
+    "sale": false,
+    "name": "Some Bag",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 9,
+    "img": "/public/img/categories/citybag/bag7.jpg",
+    "price": 652,
+    "oldPrice": 1500,
+    "sale": true,
+    "name": "Awesome bag",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 10,
+    "img": "/public/img/categories/citybag/bag8.jpg",
+    "price": 99,
+    "oldPrice": 500,
+    "sale": true,
+    "name": "Cheap Bag",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 11,
+    "img": "/public/img/categories/citybag/bag9.jpg",
+    "price": 266,
+    "oldPrice": false,
+    "sale": false,
+    "name": "Some duper Bag",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 12,
+    "img": "/public/img/categories/citybag/bag10.jpg",
+    "price": 325,
+    "oldPrice": false,
+    "sale": false,
+    "name": "Bag made with love",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 13,
+    "img": "/public/img/categories/citybag/bag11.jpg",
+    "price": 369,
+    "oldPrice": 639,
+    "sale": true,
+    "name": "Hard bag",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 14,
+    "img": "/public/img/categories/citybag/bag12.jpg",
+    "price": 847,
+    "oldPrice": false,
+    "sale": false,
+    "name": "bag for major",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 15,
+    "img": "/public/img/categories/citybag/bag13.jpg",
+    "price": 524,
+    "oldPrice": false,
+    "sale": false,
+    "name": "Some duper Bag",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 16,
+    "img": "/public/img/categories/citybag/bag14.jpg",
+    "price": 444,
+    "oldPrice": false,
+    "sale": false,
+    "name": "buy me dude",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 17,
+    "img": "/public/img/categories/citybag/bag15.jpg",
+    "price": 582,
+    "oldPrice": 1500,
+    "sale": true,
+    "name": "go hard",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 18,
+    "img": "/public/img/categories/citybag/bag16.jpg",
+    "price": 888,
+    "oldPrice": false,
+    "sale": false,
+    "name": "very good bag",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 19,
+    "img": "/public/img/categories/citybag/bag17.jpg",
+    "price": 412,
+    "oldPrice": false,
+    "sale": false,
+    "name": "Huge hole",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 20,
+    "img": "/public/img/categories/citybag/bag18.jpg",
+    "price": 652,
+    "oldPrice": false,
+    "sale": false,
+    "name": "For your mam",
+    "reviews": [],
+    "category": "citybag",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 21,
+    "img": "/public/img/categories/wallet/wallet1.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "good wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 22,
+    "img": "/public/img/categories/wallet/wallet2.jpg",
+    "price": 305,
+    "oldPrice": false,
+    "sale": false,
+    "name": "best wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 23,
+    "img": "/public/img/categories/wallet/wallet3.jpg",
+    "price": 205,
+    "oldPrice": 654,
+    "sale": true,
+    "name": "red wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 24,
+    "img": "/public/img/categories/wallet/wallet4.jpg",
+    "price": 145,
+    "oldPrice": false,
+    "sale": false,
+    "name": "good wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 25,
+    "img": "/public/img/categories/wallet/wallet5.jpg",
+    "price": 50,
+    "oldPrice": false,
+    "sale": false,
+    "name": "awesome wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 26,
+    "img": "/public/img/categories/wallet/wallet6.jpg",
+    "price": 90,
+    "oldPrice": 500,
+    "sale": true,
+    "name": "for big boss",
+    "reviews": [],
+    "category": "wallet",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 27,
+    "img": "/public/img/categories/wallet/wallet7.jpg",
+    "price": 698,
+    "oldPrice": false,
+    "sale": false,
+    "name": "shit wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 28,
+    "img": "/public/img/categories/wallet/wallet8.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 29,
+    "img": "/public/img/categories/wallet/wallet9.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 30,
+    "img": "/public/img/categories/wallet/wallet10.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 31,
+    "img": "/public/img/categories/wallet/wallet11.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 32,
+    "img": "/public/img/categories/wallet/wallet12.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 33,
+    "img": "/public/img/categories/wallet/wallet13.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 34,
+    "img": "/public/img/categories/wallet/wallet14.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 35,
+    "img": "/public/img/categories/wallet/wallet15.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 36,
+    "img": "/public/img/categories/wallet/wallet16.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 37,
+    "img": "/public/img/categories/wallet/wallet17.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 38,
+    "img": "/public/img/categories/wallet/wallet18.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy wallet",
+    "reviews": [],
+    "category": "wallet",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 39,
+    "img": "/public/img/categories/gloves/gloves1.jpg",
+    "price": 569,
+    "oldPrice": false,
+    "sale": false,
+    "name": "Leather gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 40,
+    "img": "/public/img/categories/gloves/gloves2.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 41,
+    "img": "/public/img/categories/gloves/gloves3.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 42,
+    "img": "/public/img/categories/gloves/gloves4.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 43,
+    "img": "/public/img/categories/gloves/gloves5.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 44,
+    "img": "/public/img/categories/gloves/gloves7.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 45,
+    "img": "/public/img/categories/gloves/gloves8.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 46,
+    "img": "/public/img/categories/gloves/gloves9.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 47,
+    "img": "/public/img/categories/gloves/gloves10.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 48,
+    "img": "/public/img/categories/gloves/gloves11.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 49,
+    "img": "/public/img/categories/gloves/gloves12.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 50,
+    "img": "/public/img/categories/gloves/gloves13.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 51,
+    "img": "/public/img/categories/gloves/gloves14.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 52,
+    "img": "/public/img/categories/gloves/gloves15.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 53,
+    "img": "/public/img/categories/gloves/gloves16.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 55,
+    "img": "/public/img/categories/gloves/gloves18.jpg",
+    "price": 205,
+    "oldPrice": false,
+    "sale": false,
+    "name": "dupmmy gloves",
+    "reviews": [],
+    "category": "gloves",
+    "color": "red",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 56,
+    "img": "/public/img/categories/belts/belt2.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 57,
+    "img": "/public/img/categories/belts/belt3.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 58,
+    "img": "/public/img/categories/belts/belt4.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 59,
+    "img": "/public/img/categories/belts/belt5.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 60,
+    "img": "/public/img/categories/belts/belt6.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 61,
+    "img": "/public/img/categories/belts/belt7.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 62,
+    "img": "/public/img/categories/belts/belt8.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 63,
+    "img": "/public/img/categories/belts/belt9.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 64,
+    "img": "/public/img/categories/belts/belt10.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 65,
+    "img": "/public/img/categories/belts/belt11.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 66,
+    "img": "/public/img/categories/belts/belt12.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 67,
+    "img": "/public/img/categories/belts/belt13.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 68,
+    "img": "/public/img/categories/belts/belt14.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 69,
+    "img": "/public/img/categories/belts/belt15.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 70,
+    "img": "/public/img/categories/belts/belt16.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 71,
+    "img": "/public/img/categories/belts/belt17.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 72,
+    "img": "/public/img/categories/belts/belt18.jpg",
+    "price": 365,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future Belt",
+    "reviews": [],
+    "category": "belts",
+    "color": "white",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 73,
+    "img": "/public/img/categories/backpack/bp1.jpg",
+    "price": 555,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future backpack",
+    "reviews": [],
+    "category": "backpack",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 75,
+    "img": "/public/img/categories/backpack/bp3.jpg",
+    "price": 555,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future backpack",
+    "reviews": [],
+    "category": "backpack",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 76,
+    "img": "/public/img/categories/backpack/bp4.jpg",
+    "price": 555,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future backpack",
+    "reviews": [],
+    "category": "backpack",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 78,
+    "img": "/public/img/categories/backpack/bp6.jpg",
+    "price": 555,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future backpack",
+    "reviews": [],
+    "category": "backpack",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 79,
+    "img": "/public/img/categories/backpack/bp7.jpg",
+    "price": 555,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future backpack",
+    "reviews": [],
+    "category": "backpack",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 80,
+    "img": "/public/img/categories/backpack/bp8.jpg",
+    "price": 555,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future backpack",
+    "reviews": [],
+    "category": "backpack",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 81,
+    "img": "/public/img/categories/backpack/bp9.jpg",
+    "price": 555,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future backpack",
+    "reviews": [],
+    "category": "backpack",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 82,
+    "img": "/public/img/categories/backpack/bp10.jpg",
+    "price": 555,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future backpack",
+    "reviews": [],
+    "category": "backpack",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 83,
+    "img": "/public/img/categories/backpack/bp11.jpg",
+    "price": 555,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future backpack",
+    "reviews": [],
+    "category": "backpack",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 85,
+    "img": "/public/img/categories/backpack/bp13.jpg",
+    "price": 555,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future backpack",
+    "reviews": [],
+    "category": "backpack",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 87,
+    "img": "/public/img/categories/backpack/bp15.jpg",
+    "price": 555,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future backpack",
+    "reviews": [],
+    "category": "backpack",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 88,
+    "img": "/public/img/categories/backpack/bp16.jpg",
+    "price": 555,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future backpack",
+    "reviews": [],
+    "category": "backpack",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 89,
+    "img": "/public/img/categories/backpack/bp17.jpg",
+    "price": 555,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future backpack",
+    "reviews": [],
+    "category": "backpack",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  },
+  {
+    "id": 90,
+    "img": "/public/img/categories/backpack/bp18.jpg",
+    "price": 555,
+    "oldPrice": false,
+    "sale": false,
+    "name": "My future backpack",
+    "reviews": [],
+    "category": "backpack",
+    "color": "black",
+    "images": [
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100",
+      "http://placehold.it/250x100"
+    ]
+  }
+]

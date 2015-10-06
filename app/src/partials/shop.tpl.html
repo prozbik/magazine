@@ -1,0 +1,109 @@
+<div class="divide30"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Shop</h4>
+                <p>Find the best products in our store</p>
+            </div>
+            <div class="col-sm-6 hidden-xs text-right">
+                <ol class="breadcrumb">
+                    <li><a href="home-shop.html">Shop</a></li>
+                    <li>Shop 3 col</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+<div class="divide60"></div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 margin30">
+            <div class="row margin30">
+            </div><!--row top end-->
+            <div class="row">
+              <!-- REPEAT PRODUCTS AND FILER SETTINGS -->
+                <div id="product" class="col-md-4 margin40" ng-repeat="product in goods |
+                startFrom:(currentPage - 1) * pageSize | limitTo:pageSize | filter:fsearch | filter:color">
+                    <div class="product-col">
+                        <span class="sale-label" ng-if="product.sale">Sale</span>
+                        <a href="#/shop/product/{{product.id}}">
+                            <img ng-src="{{product.img}}" alt="" class="img-responsive">
+                        </a>
+                        <div class="product-desc-sh">
+                            <h4><a href="product-detail.html">{{product.name}}</a></h4>
+                            <span><del ng-if="product.sale">{{product.oldPrice | currency}}</del> {{product.price | currency}}</span>
+                            <a href="#" class="btn btn-default"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
+                        </div>
+                    </div><!--products show col end-->
+                </div><!--col sm 6-->
+            </div><!--products row-->
+<!-- Pagination -->
+<pagination total-items="goods.length" ng-model="currentPage" items-per-page="pageSize" max-size="maxSize" boundary-links="true"></pagination>
+        </div><!--products list columns end-->
+        <div class="col-md-3 col-md-offset-1 shop-sidebar">
+            <div class="sidebar-box margin40">
+                <h4>Search</h4>
+                <form role="form" class="search-widget">
+                    <input type="text" class="form-control" ng-model="fsearch">
+                    <i class="fa fa-search"></i>
+                </form>
+            </div><!--sidebar-box-->
+
+            <div class="sidebar-box margin40">
+                <h4>Filter by Color</h4>
+                <ul class="list-unstyled cat-list">
+                    <li> <a  ng-click="change('white')">White</a> <i class="fa fa-angle-right"></i></li>
+                    <li> <a ng-click="change('black')">Black</a> <i class="fa fa-angle-right"></i></li>
+                    <li> <a ng-click="change('grey')">Grey</a> <i class="fa fa-angle-right"></i></li>
+                    <li> <a ng-click="change('yellow')">Yellow</a> <i class="fa fa-angle-right"></i></li>
+                    <li> <a ng-click="change('red')">Red</a> <i class="fa fa-angle-right"></i></li>
+                </ul>
+            </div><!--sidebar-box-->
+            <div class="sidebar-box margin40">
+                <h4>Best choice</h4>
+                <ul class="list-unstyled popular-post">
+                    <li>
+                        <div class="popular-img">
+                            <a href="#"> <img src="/public/shop-img/p-1.jpg" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="popular-desc">
+                            <h5> <a href="#">lady topa</a></h5>
+                            <h6><del>$230</del> $150</h6>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="popular-img">
+                            <a href="#"> <img src="/public/shop-img/p-2.jpg" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="popular-desc">
+                            <h5> <a href="#">Gold bangles</a></h5>
+                            <h6> $250</h6>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="popular-img">
+                            <a href="#"> <img src="/public/shop-img/p-3.jpg" class="img-responsive" alt=""></a>
+                        </div>
+                        <div class="popular-desc">
+                            <h5> <a href="#">White blazer </a></h5>
+                            <h6>$99</h6>
+                        </div>
+                    </li>
+                </ul>
+            </div><!--sidebar-box-->
+            <div class="sidebar-box margin40">
+                <h4>Tag Cloud</h4>
+                <div class="tag-list">
+                    <a href="#">Mens</a>
+                    <a href="#">Womens</a>
+                    <a href="#">jeans</a>
+                    <a href="#">T-shirts</a>
+                    <a href="#">Kids</a>
+                    <a href="#">Offers</a>
+                    <a href="#">Shoes</a>
+                    <a href="#">Shirts</a>
+                </div>
+            </div>
+        </div><!--sidebar-->
+    </div>
+</div><!--shop columns container end-->
