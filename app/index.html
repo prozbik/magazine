@@ -176,6 +176,20 @@
 <!--customizable plugin edit according to your needs-->
 <script src="/public/js/custom.js" type="text/javascript"></script>
 <script src="/public/js/isotope-custom.js" type="text/javascript"></script>
+<script src="/public/js/custom.js" type="text/javascript"></script>
+<script src="/public/js/typed.js" type="text/javascript"></script>
+<script type="text/javascript">
+    /* Typed
+        ================================================== */
+        $(".element").each(function(){
+            var $this = $(this);
+            $this.typed({
+            strings: $this.attr('data-elements').split(','),
+            typeSpeed: 100, // typing speed
+            backDelay: 3000 // pause before backspacing
+            });
+        });
+</script>
 
 <script src="/public/lib/lodash/lodash.min.js"></script>
 <!-- end template  -->

@@ -21,9 +21,20 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       url: '/home',
       templateUrl: '/src/partials/home.tpl.html'
     })
-    .state('about', {
-      url: '/about',
-      templateUrl: '/src/partials/about.tpl.html'
+    .state('blog', {
+      url: '/blog',
+      templateUrl: '/src/partials/blog.tpl.html'
+    })
+    .state('blog_single', {
+      url: '/blog/:newsId',
+      templateUrl: '/src/partials/blog_single.tpl.html',
+      controller: function ($scope, $stateParams) {
+        $scope.id = $stateParams.newsId;
+      }
+    })
+    .state('admin', {
+      url: '/admin',
+      templateUrl: '/src/partials/admin.tpl.html'
     })
     .state('contacts', {
       url: '/contacts',
@@ -43,7 +54,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
 
 /* Controller block*/
 app.controller('MainController', ['$scope','$http', function ($scope, $http) {
-  $scope.menu = ['home', 'about', 'shop', 'contacts'];
+  $scope.menu = ['home', 'shop', 'blog', 'contacts'];
   $scope.categories = ['gloves', 'wallet', 'citybag', 'belts', 'backpack'];
 
 }]);
