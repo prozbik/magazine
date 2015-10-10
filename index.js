@@ -2,24 +2,35 @@ var express = require('express');
 var fs = require('fs');
 var path = require('path');
 var morgan = require('morgan');
+var bodyParser = require('body-parser');
+var multer = require('multer');
 var mongoose = require('mongoose');
 var expressLayouts = require('express-ejs-layouts');
-var Goods = require('./models/goods.js').Goods;
+/* models */
 
+/* controllers */
+var adminUserRoute = require('./routes/users');
+var adminBlogRoute = require('./routes/articles');
+var adminGoodsRoute = require('./routes/goods');
+// /* API */
+var api = require('./routes/api');
+/* app */
 var app = express();
 
+/*set settings*/
 app.set('view engine', 'ejs');
-
+app.set("layout extractScripts", true);
 
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'app')));
 app.use(expressLayouts);
+app.use(bodyParser.urlencoded());
+
 
 app.get('/', function (req,res) {
   res.sendFile('/public/index.html');
 });
 
-/* admin section */
 app.get('/admin', function (req,res) {
   var title = 'admin panel';
   var user = {
@@ -27,62 +38,14 @@ app.get('/admin', function (req,res) {
     role: 'admin'
   }
   res.render('admin', {title, user});
-});
+})
 
-/* goods */
-app.get('/admin/goods/list', function (req,res) {
-  Goods.find({}, function (err,data) {
-    if(err) throw new err;
-    res.render('goods_list'); //render data to template
-  })
-});
-
-app.get('/admin/goods/add', function (req,res) {
-  res.render('goods_add');
-});
-
-/* users */
-app.get('/admin/users/add', function (req,res) {
-  res.render('users_add');
-});
-
-app.get('/admin/users/list', function (req,res) {
-  /* find all users*/
-  res.render('users_list'); //render data to template
-});
-
-/* blog */
-app.get('/admin/blog/add', function (req,res) {
-  res.render('blog_add'); //render data to template
-});
-
-app.get('/admin/blog/list', function (req,res) {
-  /* find all articles */
-    res.render('blog_list'); //render data to template
-});
+app.use(adminUserRoute);
+app.use(adminBlogRoute);
+app.use(adminGoodsRoute);
+app.use(api);
 
 
-
-
-
-
-/* API */
-app.get('/api/goods', function (req,res) {
-    Goods.find({}, function (err, data) {
-      if(err) throw new err;
-      res.json(data);
-    })
-});
-
-/*find all by category */
-app.get('/api/goods/:category', function (req,res) {
-  var category = req.params.category;
-
-    Goods.find({category: category }, function (err, data) {
-      if(err) throw new err;
-      res.json(data);
-    })
-});
 
 
 app.listen(3000);

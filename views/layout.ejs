@@ -315,7 +315,7 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu">
             <li class="header">MAIN NAVIGATION</li>
-            <li class="active">
+            <li>
               <a href="/admin">
                 <i class="fa fa-dashboard"></i> <span>Главная</span>
               </a>
@@ -327,7 +327,7 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="/admin/goods/add"><i class="fa fa-cart-plus"></i> Добавить товар</a></li>
-                <li><a href="/admin/goods/list"><i class="fa fa-list"></i> Список товаров</a></li>
+                <li><a href="/admin/goods"><i class="fa fa-list"></i> Список товаров</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -336,7 +336,7 @@
               </a>
               <ul class="treeview-menu">
                 <li><a href="/admin/users/add"><i class="fa fa-user-plus"></i> Добавить пользователя</a></li>
-                <li><a href="/admin/users/list"><i class="fa fa-list"></i> Список пользователей</a></li>
+                <li><a href="/admin/users"><i class="fa fa-list"></i> Список пользователей</a></li>
               </ul>
             </li>
             <li class="treeview">
@@ -581,5 +581,6 @@
     <script src="/public/admin/dist/js/pages/dashboard.js" type="text/javascript"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="/public/admin/dist/js/demo.js" type="text/javascript"></script>
-  </body>
+    <%- script %>
+</body>
 </html>

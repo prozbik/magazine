@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <form action="/admin/goods" method="post" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Имя товара: </label>
+        <input type="text" class="form-control" placeholder="product name" name="name" id="name">
+      </div>
+      <div class="form-group">
+        <label for="price">Цена: </label>
+        <input type="number" class="form-control" placeholder="$ 100.00" name="price" id="price">
+      </div>
+      <div class="form-group">
+        <label for="sale">Распродажа ? </label>
+        <input type="checkbox" name="sale" id="sale">
+      </div>
+      <div class="form-group">
+        <label for="old_price">Старая цена: </label>
+        <input type="number" class="form-control" placeholder="old pirce $ 99.00" name="old_price" id="old_price" disabled="">
+      </div>
+    <div class="form-group">
+      <label for="category">Выбрать категорию: </label>
+        <select class="form-control" name="category" id="category">
+          <option value="backpack">Backpack</option>
+          <option value="belts">Belts</option>
+          <option value="citybag">Citybag</option>
+          <option value="gloves">Gloves</option>
+          <option value="wallet">Wallet</option>
+        </select>
+    </div>
+    <div class="form-group">
+      <label for="quantity">Количество: </label>
+      <input type="number" class="form-control" placeholder="..." name="quantity" id="quantity" min="1">
+    </div>
+    <div class="form-group">
+      <label for="availible">Доступно ?</label>
+      <input type="checkbox" name="availible" id="availible" checked>
+    </div>
+    <div class="form-group">
+      <label for="color">Цвет: </label>
+      <input type="text" class="form-control" name="color" id="color" id="color" placeholder="white, black, red...">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputFile">Фото</label>
+        <input type="file" id="exampleInputFile" name="picture">
+        <p class="help-block">Выберите фото для продукта</p>
+    </div>
+    <div>
+      <button class="btn btn-block btn-success btn-lg" type="submit">Добавить товар</button>
+    </div>
+  </form>
+    </div>
+  </div>
+</div>

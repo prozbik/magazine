@@ -3,6 +3,8 @@ var app = angular.module('app', ["ui.router", "ui.bootstrap", "ngResource"]);
 app.factory('GoodsAPI', ['$resource', function ($resource) {
   return $resource('/src/models/goods.json', {});
 }]);
+
+
 /* filter block */
 app.filter('startFrom', function () {
   return function (data,start) {
@@ -31,10 +33,6 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       controller: function ($scope, $stateParams) {
         $scope.id = $stateParams.newsId;
       }
-    })
-    .state('admin', {
-      url: '/admin',
-      templateUrl: '/src/partials/admin.tpl.html'
     })
     .state('contacts', {
       url: '/contacts',

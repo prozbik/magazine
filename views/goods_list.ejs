@@ -10,16 +10,16 @@
                     <div class="row">
                       <div class="col-sm-6">
                         <div class="dataTables_length" id="example1_length">
-                          <label>Show <select name="example1_length" aria-controls="example1" class="form-control input-sm">
+                          <label>Показать <select name="example1_length" aria-controls="example1" class="form-control input-sm">
                             <option value="10">10</option>
                             <option value="25">25</option>
                             <option value="50">50</option>
                             <option value="100">100</option>
-                          </select> entries</label>
+                          </select> записей</label>
                         </div></div>
                         <div class="col-sm-6">
                           <div id="example1_filter" class="dataTables_filter">
-                            <label>Search:<input type="search" class="form-control input-sm" placeholder="" aria-controls="example1"></label>
+                            <label>Поиск:<input type="search" class="form-control input-sm" placeholder="" aria-controls="example1"></label>
                           </div>
                         </div>
                       </div>
@@ -27,31 +27,44 @@
                         <div class="col-sm-12">
                           <table id="example1" class="table table-bordered table-striped dataTable" role="grid" aria-describedby="example1_info">
                             <thead>
-                              <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 178px;">Rendering engine</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 221px;">Browser</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 194px;">Platform(s)</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 154px;">Engine version</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 111px;">CSS grade</th></tr>
+                              <tr role="row">
+                                <th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-sort="ascending" aria-label="Rendering engine: activate to sort column descending" style="width: 178px;">
+                                  ID</th>
+                                  <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Browser: activate to sort column ascending" style="width: 221px;">
+                                    Имя</th>
+                                  <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Platform(s): activate to sort column ascending" style="width: 194px;">
+                                    Категория</th>
+                                  <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="Engine version: activate to sort column ascending" style="width: 154px;">
+                                    Количество</th>
+                                  <th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="CSS grade: activate to sort column ascending" style="width: 111px;">
+                                    Опубликовано?</th>
+                                    <th>Действия</th>
+                                  </tr>
                             </thead>
                           <tbody>
-                            <tr role="row" class="odd">
-                              <td class="sorting_1">Gecko</td>
-                              <td>Firefox 1.0</td>
-                              <td>Win 98+ / OSX.2+</td>
-                              <td>1.7</td>
-                              <td>A</td>
+                        <% if(goods) {
+                          goods.forEach(function(el,i){ %>
+                            <tr role="row">
+                              <td><%= el._id %></td>
+                              <td><%= el.name %></td>
+                              <td><%= el.category %></td>
+                              <td><%= el.quantity %></td>
+                              <td><% if(el.available) { %> Да <% } else { %> Нет <% } %></td>
+                              <td>
+                                <a href="/admin/goods/delete/<%= el._id %>">Удалить</a>
+                                <a href="/admin/goods/edit/<%= el._id %>">Изменить</a>
+                              </td>
                             </tr>
-                          <tr role="row" class="even">
-                            <td class="sorting_1">Gecko</td>
-                            <td>Firefox 1.5</td>
-                            <td>Win 98+ / OSX.2+</td>
-                            <td>1.8</td>
-                            <td>A</td>
-                        </tr>
+                        <%  })}; %>
                       </tbody>
                     <tfoot>
                       <tr>
-                        <th rowspan="1" colspan="1">Rendering engine</th>
-                        <th rowspan="1" colspan="1">Browser</th>
-                        <th rowspan="1" colspan="1">Platform(s)</th>
-                        <th rowspan="1" colspan="1">Engine version</th>
-                        <th rowspan="1" colspan="1">CSS grade</th>
+                        <th rowspan="1" colspan="1">ID</th>
+                        <th rowspan="1" colspan="1">Имя</th>
+                        <th rowspan="1" colspan="1">Категория</th>
+                        <th rowspan="1" colspan="1">Количество</th>
+                        <th rowspan="1" colspan="1">Опубликовано?</th>
+                        <th>Действия</th>
                       </tr>
                     </tfoot>
                   </table>
