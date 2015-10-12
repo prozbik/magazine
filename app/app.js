@@ -34,25 +34,26 @@ app.config(function ($stateProvider, $urlRouterProvider) {
         $scope.id = $stateParams.newsId;
       }
     })
-    .state('contacts', {
-      url: '/contacts',
-      templateUrl: '/src/partials/contacts.tpl.html'
+    .state('cart', {
+      url: '/cart',
+      templateUrl: '/src/partials/cart.tpl.html',
+      controller: 'ShopController'
     })
     .state('shop', {
       url: '/shop/:category',
       templateUrl: '/src/partials/shop.tpl.html',
       controller: 'ShopController'
     })
-    .state('single', {
+    .state('product-detail', {
       url: '/shop/:category/:id',
-      templateUrl: '/src/partials/single.tpl.html',
+      templateUrl: '/src/partials/product_detail.tpl.html',
       controller: 'SingleController'
     })
 });
 
 /* Controller block*/
 app.controller('MainController', ['$scope','$http', function ($scope, $http) {
-  $scope.menu = ['home', 'shop', 'blog', 'contacts'];
+  $scope.menu = ['home', 'shop', 'blog'];
   $scope.categories = ['gloves', 'wallet', 'citybag', 'belts', 'backpack'];
 
 }]);

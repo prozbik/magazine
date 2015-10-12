@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 var config = require('../config/app');
 
-mongoose.connect(config.dev.prod);
+mongoose.connect(config.dev.db);
 
 var db = mongoose.connection;
 

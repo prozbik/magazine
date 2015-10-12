@@ -101,6 +101,6 @@ app.use(api);
 
 
 
-app.listen(config.dev.prod, function () {
+app.listen(config.dev.port, function () {
   console.log('We are on air,server listening on port ' + config.dev.port);
 });
