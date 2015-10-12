@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
+var config = require('../config/app');
 
-mongoose.connect('mongodb://localhost/test');
+mongoose.connect(config.dev.prod);
 
 var db = mongoose.connection;
 
@@ -39,6 +40,7 @@ var UserSchema = new mongoose.Schema({
   email: String,
   role: {type: String, default: 'user'}
 });
+
 
 
 module.exports.Goods = mongoose.model('Goods', GoodsSchema);

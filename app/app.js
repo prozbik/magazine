@@ -1,7 +1,7 @@
 var app = angular.module('app', ["ui.router", "ui.bootstrap", "ngResource"]);
 /* service block */
 app.factory('GoodsAPI', ['$resource', function ($resource) {
-  return $resource('/src/models/goods.json', {});
+  return $resource('/api/v.0.0.1/:cat?/:id?', {});
 }]);
 
 
@@ -44,7 +44,7 @@ app.config(function ($stateProvider, $urlRouterProvider) {
       controller: 'ShopController'
     })
     .state('single', {
-      url: '/shop/product/:id',
+      url: '/shop/:category/:id',
       templateUrl: '/src/partials/single.tpl.html',
       controller: 'SingleController'
     })
