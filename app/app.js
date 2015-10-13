@@ -1,9 +1,11 @@
 var app = angular.module('app', ["ui.router", "ui.bootstrap", "ngResource"]);
 /* service block */
-app.factory('GoodsAPI', ['$resource', function ($resource) {
-  return $resource('/api/v.0.0.1/:cat?/:id?', {});
+app.factory('GoodsFactory', ['$resource', function ($resource) {
+  return $resource('/api/goods/:category/:id', {});
 }]);
-
+app.factory('BlogFactory', ['$resource', function ($resource) {
+  return $resource('/api/blog/:id', {});
+}]);
 
 /* filter block */
 app.filter('startFrom', function () {
@@ -25,14 +27,13 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     })
     .state('blog', {
       url: '/blog',
-      templateUrl: '/src/partials/blog.tpl.html'
+      templateUrl: '/src/partials/blog.tpl.html',
+      controller: 'BlogController'
     })
     .state('blog_single', {
-      url: '/blog/:newsId',
+      url: '/blog/:id',
       templateUrl: '/src/partials/blog_single.tpl.html',
-      controller: function ($scope, $stateParams) {
-        $scope.id = $stateParams.newsId;
-      }
+      controller: 'BlogSingleController'
     })
     .state('cart', {
       url: '/cart',
@@ -47,72 +48,44 @@ app.config(function ($stateProvider, $urlRouterProvider) {
     .state('product-detail', {
       url: '/shop/:category/:id',
       templateUrl: '/src/partials/product_detail.tpl.html',
-      controller: 'SingleController'
+      controller: 'ShopSingleController'
     })
 });
 
 /* Controller block*/
-app.controller('MainController', ['$scope','$http', function ($scope, $http) {
+app.controller('MainController', ['$scope','$http', 'BlogFactory', function ($scope, $http, BlogFactory) {
   $scope.menu = ['home', 'shop', 'blog'];
   $scope.categories = ['gloves', 'wallet', 'citybag', 'belts', 'backpack'];
+  $scope.lastNews = BlogFactory.query();
+
 
 }]);
 
-app.controller('ShopController', ['$scope', '$http','GoodsAPI','$stateParams', function ($scope, $http, GoodsAPI, $stateParams) {
+app.controller('ShopController', ['$scope','GoodsFactory', function ($scope, GoodsFactory) {
   $scope.goods = [];
   $scope.pageSize = 6;
   $scope.currentPage = 1;
   $scope.maxSize = 5;
   $scope.color = '';
 
-  $scope.change = function (color) {
-    var buffer = [];
-    GoodsAPI.query({}, function (data) {
-      data.filter(function (item) {
-        if(item.color == color) {
-           buffer.push(item);
-        }
-      })
-    });
-    $scope.goods = buffer;
-  }
+  $scope.goods = GoodsFactory.query();
+
 $scope.checkProducts = function(goods){
   return goods = goods.length > 0 ? true : false;
 }
 
-  if(_.size($stateParams.category) > 0) {
-    var buffer = [];
-    GoodsAPI.query({}, function (data) {
-      data.filter(function (item) {
-        if(item.category == $stateParams.category) {
-           buffer.push(item);
-        }
-      })
-    });
-    $scope.goods = buffer;
-  } else {
-    GoodsAPI.query({}, function (data) {
-      $scope.goods = data;
-    });
-  }
+
 
 }]);
 
 
-app.controller('SingleController', ['$scope','$http', '$stateParams', 'GoodsAPI', function ($scope, $http, $stateParams, GoodsAPI) {
-  var id, buffer;
-  id = $stateParams.id;
-  buffer = [];
-  $scope.goods = [];
+app.controller('ShopSingleController', ['$scope','$stateParams', 'GoodsFactory', function ($scope, $stateParams, GoodsFactory) {
+  $scope.product = GoodsFactory.get({category: $stateParams.category, id: $stateParams.id});
+}]);
 
-  GoodsAPI.query({}, function (data) {
-    data.filter(function (item) {
-      if(item.id == id) {
-         buffer.push(item);
-      }
-    })
-  });
-  $scope.goods = buffer;
-
-  console.log($scope.goods);
+app.controller('BlogController', ['$scope','BlogFactory', function ($scope,BlogFactory) {
+  $scope.news = BlogFactory.query();
+}]);
+app.controller('BlogSingleController', ['$scope','BlogFactory', '$stateParams', function ($scope,BlogFactory, $stateParams) {
+  $scope.article = BlogFactory.get({id: $stateParams.id });
 }]);

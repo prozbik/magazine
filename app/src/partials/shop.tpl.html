@@ -26,11 +26,11 @@
                 startFrom:(currentPage - 1) * pageSize | limitTo:pageSize | filter:fsearch | filter:color">
                     <div class="product-col">
                         <span class="sale-label" ng-if="product.sale">Sale</span>
-                        <a href="#/shop/product/{{product.id}}">
+                        <a href="#/shop/{{product.category}}/{{product._id}}">
                             <img ng-src="{{product.img}}" alt="" class="img-responsive">
                         </a>
                         <div class="product-desc-sh">
-                            <h4><a href="product-detail.html">{{product.name}}</a></h4>
+                            <h4><a href="#/shop/{{product.category}}/{{product._id}}">{{product.name}}</a></h4>
                             <span><del ng-if="product.sale">{{product.oldPrice | currency}}</del> {{product.price | currency}}</span>
                             <a href="#" class="btn btn-default"><i class="fa fa-shopping-cart"></i>Add to Cart</a>
                         </div>
@@ -47,17 +47,6 @@
                     <input type="text" class="form-control" ng-model="fsearch">
                     <i class="fa fa-search"></i>
                 </form>
-            </div><!--sidebar-box-->
-
-            <div class="sidebar-box margin40">
-                <h4>Filter by Color</h4>
-                <ul class="list-unstyled cat-list">
-                    <li> <a  ng-click="change('white')">White</a> <i class="fa fa-angle-right"></i></li>
-                    <li> <a ng-click="change('black')">Black</a> <i class="fa fa-angle-right"></i></li>
-                    <li> <a ng-click="change('grey')">Grey</a> <i class="fa fa-angle-right"></i></li>
-                    <li> <a ng-click="change('yellow')">Yellow</a> <i class="fa fa-angle-right"></i></li>
-                    <li> <a ng-click="change('red')">Red</a> <i class="fa fa-angle-right"></i></li>
-                </ul>
             </div><!--sidebar-box-->
             <div class="sidebar-box margin40">
                 <h4>Best choice</h4>

@@ -45,13 +45,22 @@ module.exports = {
   },
   postAction: function(req,res) {
     if(req.params.action === 'add'){
+      var img, destination, index;
+      if(req.file) {
+        destination = req.file.destination;
+        index = destination.indexOf('/public');
+        destination = destination.substring(index) + '/' + req.file.filename;
+        img = destination;
+      } else {
+        img = 'http://placehold.it/500x300';
+      }
       var article = new model ({
         title: req.body.title,
         date: req.body.date,
         status: req.body.status,
         text: req.body.text,
         tags: ['tag1', 'tag2', 'tag3'],
-        img: 'http://placehold.it/750x332'
+        img: img
       });
 
       article.save(function (err) {
