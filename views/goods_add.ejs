@@ -41,9 +41,17 @@
       <input type="text" class="form-control" name="color" id="color" id="color" placeholder="Белый, черный, голубой ... ">
     </div>
     <div class="form-group">
-      <label for="exampleInputFile">Фото</label>
-        <input type="file" id="exampleInputFile" name="picture">
-        <p class="help-block">Выберите фото для продукта</p>
+      <label for="images">Еще фотографии</label>
+        <input type="file" id="images" name="images[]" multiple>
+        <p class="help-block">Выберите еще максимум 4 фото для продукта</p>
+    </div>
+    <div class="form-group">
+      <label for="desc">Описание товара</label>
+      <textarea name="description" rows="8" cols="40" id="desc" class="form-control" placeholder="Введите описание товара..."></textarea>
+    </div>
+    <div class="form-group">
+      <label for="tags">Тэги</label>
+      <input type="text" id="tags" name="tags" placeholder="Введите теги" class="form-control">
     </div>
     <div>
       <button class="btn btn-block btn-success btn-lg" type="submit">Добавить товар</button>

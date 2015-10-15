@@ -10,7 +10,7 @@ var upload = multer({ storage: storage });
 var MD = require('../models/goods');
 
 router.get('/admin/goods/:action?/:id?', MD.adminAuth, MD.getAction, MD.renderPage);
-router.post('/admin/goods/:action?/:id?', MD.adminAuth, upload.single('picture'), MD.postAction);
+router.post('/admin/goods/:action?/:id?',upload.array('images[]', 3), MD.postAction);
 
 
 module.exports = router;

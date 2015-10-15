@@ -74,13 +74,12 @@ $scope.checkProducts = function(goods){
   return goods = goods.length > 0 ? true : false;
 }
 
-
-
 }]);
 
 
 app.controller('ShopSingleController', ['$scope','$stateParams', 'GoodsFactory', function ($scope, $stateParams, GoodsFactory) {
   $scope.product = GoodsFactory.get({category: $stateParams.category, id: $stateParams.id});
+  console.log($scope.product);
 }]);
 
 app.controller('BlogController', ['$scope','BlogFactory', function ($scope,BlogFactory) {

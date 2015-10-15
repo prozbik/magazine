@@ -4,6 +4,8 @@ var ls = require('local-storage');
 var jwt = require('jsonwebtoken');
 var jwtSecret = 'fokeowkfow123KLfq/ekfoweo';
 
+// TODO: input for desc, images, tags
+// TODO: edit page for goods by id
 
 module.exports = {
   adminAuth: function (req,res,next) {
@@ -52,15 +54,30 @@ module.exports = {
   },
   postAction: function(req,res) {
     if(req.params.action === 'add'){
-      var img, destination, index;
-      if(req.file) {
-        destination = req.file.destination;
-        index = destination.indexOf('/public');
-        destination = destination.substring(index) + '/' + req.file.filename;
-        img = destination;
-      } else {
-        img = 'http://placehold.it/500x300';
+      var photos;
+      if(req.files) {
+        photos = req.files;
+// TODO: return buffer with new destination
+        photos.forEach(function(photo){
+          var img, destination, index,
+          destination = photo.destination;
+          index = destination.indexOf('/public');
+
+        })
       }
+        // destination = req.files.destination;
+        // index = destination.indexOf('/public');
+        // destination = destination.substring(index) + '/' + req.files.filename;
+        // img = destination;
+        // photos = req.files.images;
+        //
+        // photos.forEach(function (photo) {
+        //   console.log(photo);
+        //   photo.img = destination;
+        //   return;
+        // });
+        console.log(req.files);
+
       var product = new model({
         img:  img,
         price: req.body.price,
@@ -70,7 +87,10 @@ module.exports = {
         category: req.body.category,
         color: req.body.color,
         available: req.body.available || false,
-        quantity: req.body.quantity
+        quantity: req.body.quantity,
+        desc: req.body.description,
+        images: photos,
+        tags: req.body.tags
       });
 
       product.save(function (err) {

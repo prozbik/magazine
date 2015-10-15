@@ -18,9 +18,12 @@ var GoodsSchema = new mongoose.Schema({
   sale: {type: Boolean, default: false},
   name: String,
   category: String,
-  color: [],
+  color: String,
+  tags: [],
+  images: [],
   available: {type: Boolean, default: false},
-  quantity: {type: Number, default: 1}
+  quantity: {type: Number, default: 0},
+  desc: String
 });
 
 
