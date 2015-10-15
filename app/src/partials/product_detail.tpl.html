@@ -23,11 +23,11 @@
                 <div class="col-sm-5 margin30">
                     <div class="detail-img-col">
                         <a class="show-image" >
-                            <img ng-src="{{product.img}}" alt="" style="max-width: 350px">
+                            <img ng-src="{{product.img}}" alt="">
                         </a>
                         <div class="divide15"></div>
-                        <a class="show-image detail-img-sm" ng-repeat="pic in product.images track by $index">
-                            <img ng-src="{{ pic }}" alt="" class="img-responsive">
+                        <a class="show-image detail-img-sm" ng-repeat="pic in product.images">
+                            <img ng-src="{{ pic }}" alt="" class="img-responsive" ng-click="changeMainPic(pic)">
                         </a>
 
                     </div>
@@ -36,24 +36,23 @@
                 <div class="col-sm-7">
                     <div class="detail-content-right">
                         <h3 class="title">
-                            {{product.name}} <small>in stock ? {{product.available}}</small>
+                            {{product.name}} <small>В наличии ? <span>{{checkAvailiable(product.available)}}</span></small>
                         </h3>
-
                         <ul class="list-inline rating-list">
+                          <!-- TODO: реализовать рейтинг используя bootstrap.ui  -->
                             <li class="detail-price"> {{ product.price | currency }}</li>
                             <li><i class="fa fa-star yellow"></i></li>
                             <li><i class="fa fa-star yellow"></i></li>
                             <li><i class="fa fa-star yellow"></i></li>
                             <li><i class="fa fa-star gray"></i></li>
                             <li><i class="fa fa-star gray"></i></li>
-                            <li class="review"><a href="#review">(1 Review)</a></li>
                         </ul>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.
+                          Краткий отзыв о товаре
                         </p>
                         <hr>
                         <ul class="list-unstyled product-feautres-list">
-                            <li><i class="fa fa-check"></i> 100% original items</li>
+                            <li><i class="fa fa-check"></i> 100% оригинал</li>
                             <li><i class="fa fa-check"></i> made in Usa</li>
                             <li><i class="fa fa-check"></i> 30 day Money back</li>
                         </ul>
@@ -63,13 +62,13 @@
                             <div class="input-group bootstrap-touchspin" style="">
                                 <input type="text" class="form-control input-qty text-center" value="1">
                             </div><!--bootstrap touchspin end-->
-                            <button class="btn btn-theme-bg">Add to cart</button>
+                            <button class="btn btn-theme-bg">в корзину</button>
                         </div>
                         <hr>
                         <div class="product-cat-text">
-                            <p><strong>SKU:</strong> {{product._id}}</p>
-                            <p><strong>Category:</strong><a href="#"> {{product.category}}</a></p>
-                            <p><strong>Tags:</strong><a href="#" ng-repeat="tag in proudct.tags"> {{tag}}</a></p>                       </div>
+                            <p><strong>Код:</strong> {{product._id}}</p>
+                            <p><strong>Категория:</strong><a href="#"> {{product.category}}</a></p>
+                            <p><strong>Тэги:</strong><a href="#" ng-repeat="tag in product.tags"> {{tag}}</a></p>                       </div>
                     </div>
                 </div>
             </div><!--product details up end-->
@@ -78,67 +77,42 @@
             <!--review and details-->
             <div class="tabs" id="review">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="" data-toggle="tab" aria-expanded="true">Description</a></li>
-                    <li class=""><a href="" data-toggle="tab" aria-expanded="false">Reviews (1)</a></li>
-
+                    <li ng-class="{'active': panel === 1}"><a ng-click="setPanel(1)">Описание</a></li>
+                    <li ng-class="{'active': panel === 2}"><a ng-click="setPanel(2)">Отзывы</a></li>
                 </ul>
 
                 <!-- Tab panes -->
                 <div class="tab-content">
-                    <div class="tab-pane active" id="home">
+                  <!--  tab-pane active -->
+                    <div class="tab-pane" ng-class="{ 'active': panel === 1 }" id="home"  ng-model="panelOne">
                         <div class="tab-desc animated fadeInDown">
 
-                            <h4>Product Description</h4>
-                            <!-- here will be {{ product.desc }} -->
-                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+                            <h4>Описание товара</h4>
+                               <p>{{ product.desc }}</p>
                             </p>
                         </div>
 
                     </div>
-                    <div class="tab-pane" id="profile">
+                    <div class="tab-pane" ng-class="{ 'active': panel === 2 }" id="profile" ng-model="panelTwo">
                         <div class="tab-desc animated fadeIn">
-
                             <div class="margin40">
-                                <h5>1 review for Men's Check shirt</h5>
+                                <!-- <h5>1 review for Men's Check shirt</h5> -->
                                 <div class="review-box">
-                                    <img src="/public/img/team-1.jpg" alt="" class="img-responsive">
-                                    <div class="review-content">
+                                  <div id="disqus_thread"></div>
+                                  <script type="text/javascript">
+                                      /* * * CONFIGURATION VARIABLES * * */
+                                      var disqus_shortname = 'protzgroup';
 
-                                        <ul class="list-inline rating-list">
-                                            <li class="admin-detail"><span><strong>Admin</strong> - March 10, 2015</span></li>
-                                            <li><i class="fa fa-star yellow"></i></li>
-                                            <li><i class="fa fa-star yellow"></i></li>
-                                            <li><i class="fa fa-star yellow"></i></li>
-                                            <li><i class="fa fa-star yellow"></i></li>
-                                            <li><i class="fa fa-star-half-empty gray"></i></li>
-
-                                        </ul>
-                                        <p>
-                                            Great service, i love this product.
-                                        </p>
-                                    </div>
+                                      /* * * DON'T EDIT BELOW THIS LINE * * */
+                                      (function() {
+                                          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                                          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                                          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                                      })();
+                                  </script>
+                                  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
                                 </div><!--review box end-->
                             </div><!--div-->
-                            <div class="comment-form">
-                                <h3 class="heading">Add Review</h3>
-                                <div class="form-contact">
-                                    <form role="form">
-                                        <div class="form-group">
-                                            <label for="name">Name</label>
-                                            <input type="email" class="form-control" id="name" required="">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="email">Email</label>
-                                            <input type="password" class="form-control" id="email" required="">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="message">Comment</label>
-                                            <textarea class="form-control" rows="7" id="message" required=""></textarea>
-                                        </div>
-                                        <button type="submit" class="btn btn-theme-bg btn-lg pull-right">Comment</button>
-                                    </form>
-                                </div>
-                            </div><!--comment form end-->
                         </div>
                     </div>
 
@@ -155,7 +129,7 @@
                         <i class="fa fa-truck"></i>
                     </div><!--services icon-->
                     <div class="services-box-info">
-                        <h4>Free Delivery</h4>
+                        <h4>Бесплатная доставка</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing metus.
                         </p>
@@ -169,7 +143,7 @@
                         <i class="fa fa-gift"></i>
                     </div><!--services icon-->
                     <div class="services-box-info">
-                        <h4>100% originals</h4>
+                        <h4>100% Оригинал</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing metus.
                         </p>
@@ -192,12 +166,13 @@
             </div><!--sidebar info box-->
         </div>
     </div>
+    <!-- TODO: реализовать выборку сопутствующих товаров.  -->
+
     <div class="divide50"></div>
     <div class="row">
         <div class="col-sm-12">
-            <h3 class="heading">Featured items</h3>
+            <h3 class="heading">С этим товаром покупают: </h3>
         </div>
-
         <div class="col-md-3 margin40">
             <div class="product-col">
                 <a href="#/shop">

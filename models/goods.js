@@ -54,32 +54,31 @@ module.exports = {
   },
   postAction: function(req,res) {
     if(req.params.action === 'add'){
-      var photos;
+      var photos, buff = [], tags = [], tagsBuff;
       if(req.files) {
         photos = req.files;
-// TODO: return buffer with new destination
         photos.forEach(function(photo){
-          var img, destination, index,
+          var destination, index;
           destination = photo.destination;
           index = destination.indexOf('/public');
-
+          destination = destination.substring(index) + '/' + photo.filename;
+          buff.push(destination);
+          return buff;
         })
       }
-        // destination = req.files.destination;
-        // index = destination.indexOf('/public');
-        // destination = destination.substring(index) + '/' + req.files.filename;
-        // img = destination;
-        // photos = req.files.images;
-        //
-        // photos.forEach(function (photo) {
-        //   console.log(photo);
-        //   photo.img = destination;
-        //   return;
-        // });
-        console.log(req.files);
+      /* get tags like array */
+      if(req.body.tags.length > 1){
+        tagsBuff = req.body.tags.split(',');
+        tagsBuff.forEach(function(i){
+          tags.push(i.trim());
+          return tags;
+        });
+      } else {
+        return String(tags);
+      }
 
       var product = new model({
-        img:  img,
+        img:  buff[0],
         price: req.body.price,
         oldPrice: req.body.old_price || 0,
         sale: req.body.sale || false,
@@ -89,8 +88,8 @@ module.exports = {
         available: req.body.available || false,
         quantity: req.body.quantity,
         desc: req.body.description,
-        images: photos,
-        tags: req.body.tags
+        images: buff.slice(1),
+        tags: tags
       });
 
       product.save(function (err) {

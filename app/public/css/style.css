@@ -1,4 +1,4 @@
-/* 
+/*
     Document   : assan
     Author     : Design_mylife
     Description:assan multi-page for Multipurpose use
@@ -1079,7 +1079,8 @@ input[type="color"]:focus,
 
 /*******************home parallax-bg----***********************/
 #home-parallax {
-  background: url("../img/showcase-4.jpg") no-repeat;
+  background: url("../img/winter_selling.jpg") no-repeat;
+  background-size: cover;
   padding: 190px 0; }
 
 .typed-cursor {

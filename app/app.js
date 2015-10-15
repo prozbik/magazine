@@ -79,7 +79,29 @@ $scope.checkProducts = function(goods){
 
 app.controller('ShopSingleController', ['$scope','$stateParams', 'GoodsFactory', function ($scope, $stateParams, GoodsFactory) {
   $scope.product = GoodsFactory.get({category: $stateParams.category, id: $stateParams.id});
-  console.log($scope.product);
+
+  $scope.panel = 1;
+
+  $scope.checkAvailiable = function(input) {
+    return input = input ? 'Да' : 'Нет';
+  }
+
+  $scope.changeMainPic = function(pic) {
+    var i = $scope.product.images.indexOf(pic);
+    $scope.product.images.splice(i,1,$scope.product.img);
+    $scope.product.img = pic;
+  }
+
+  $scope.setPanel = function(input) {
+    if(input === 1 || input === 2) {
+      $scope.panel = input;
+    } else {
+      $scope.panel = 1;
+    }
+  }
+
+
+
 }]);
 
 app.controller('BlogController', ['$scope','BlogFactory', function ($scope,BlogFactory) {

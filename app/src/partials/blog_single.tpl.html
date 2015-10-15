@@ -20,12 +20,11 @@
             <div class="blog-post">
                     <div>
                         <img ng-src="{{article.img}}" class="img-responsive" alt="workimg">
-
                     </div>
                 <ul class="list-inline post-detail">
                     <li>by <a href="#">admin</a></li>
                     <li><i class="fa fa-calendar"></i> {{article.date | date: year}}</li>
-                    <li><i class="fa fa-tag"></i> <a href="#"ng-repeat="tag in article.tags"> {{ tag }}</a></li>
+                    <li><i class="fa fa-tag"></i> <a ng-repeat="tag in article.tags"> {{ tag }}</a></li>
                     <li><i class="fa fa-comment"></i> <a href="#">6 Comments</a></li>
                 </ul>
                 <h2>{{article.title}}</h2>
